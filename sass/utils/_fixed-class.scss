@@ -1,0 +1,21 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .color-logo {
+    color: $main-blue;
+  }
+  .footer-header {
+    color: $main-white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }

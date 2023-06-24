@@ -1,0 +1,78 @@
+.team {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    justify-content: space-between;
+  }
+.heading-team {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    background: $backgroud-white;
+  }
+  .heading-team-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+  .image-backgroud {
+    background: $main-white;
+    width: 270px;
+    height: 428px;
+    left: 215px;
+    top: 1635px;
+    box-shadow: $modal-box-shadow;
+    border-radius: 0px 0px 4px 4px;
+    &__card {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 2;
+      text-align: center;
+      padding-top: 15px;
+    }
+    &__position {
+      font-size: 16px;
+      line-height: 1.88;
+      color: $main-gray;
+    }
+  }
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 30px;
+    padding: 0;
+    padding-top: 15px;
+  &__background {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: $transition-background;
+    &:hover,
+    &:focus {
+      background-color: $main-blue;
+    }
+  }
+  &__img {
+    fill: $icon-gray;
+    margin: 12px;
+    transition: $transition-fill;
+    &:hover,
+    &:focus {
+      fill: $main-white;
+    }
+  }
+}
+  .social-icons__background:hover .social-icons__img {
+    fill: $main-white;
+  }
+  .social-icons__background:focus .social-icons__img {
+    fill: $main-white;
+  }

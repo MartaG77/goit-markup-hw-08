@@ -1,0 +1,199 @@
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $backdrop-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: visibility, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .is-hidden {
+    pointer-events: none;
+    visibility: hidden;
+    transform: rotate(180deg);
+  }
+  .close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: $main-white;
+    border: $border-gray1;
+    border-radius: 50%;
+    cursor: pointer;
+&__icon {
+    position: relative;
+    top: 3px;
+    height: 17px;
+    width: 17px;
+  }
+}
+  .modal {
+    position: absolute;
+    width: 528px;
+    top: 221px;
+    background: $main-white;
+    box-shadow: $modal-box-shadow;
+    border-radius: 4px;
+    display: block;
+  }
+  .label-background {
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    background: $background-gray;
+    bottom: 0;
+  }
+  .label {
+    position: relative;
+  }
+  .label-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: $main-white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 27px;
+    letter-spacing: 0.03em;
+  }
+  .form-style {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .form-box {
+    position: relative;
+    width: 448px;
+  &__label-style { 
+    font-size: 12px;
+    line-height: 14px;
+    color: $main-gray;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 4px;
+  }
+  &__input-style {
+    position: relative;
+    transition: $transition-fill;
+  &--label {
+      width: 448px;
+      height: 40px;
+      border: $border-gray2;
+      border-radius: 4px;
+      display: block;
+      box-sizing: border-box;
+      padding-left: 42px;
+      transition: $transition-border;
+      outline: $main-blue;
+      &:hover,
+      &:focus {
+        border: 1px solid $main-blue;
+      }
+  }
+  &--icon {
+        position: absolute;
+        top: 14px;
+        bottom: 14px;
+        left: 15px;
+        fill: $main-black;
+  
+  }
+  &:hover svg,
+  &:focus-within svg {
+  fill: $main-blue;
+  }
+  }
+}
+  .textarea-style {
+    width: 448px;
+    height: 120px;
+    background-color: inherit;
+    border: $border-gray2;
+    border-radius: 4px;
+    resize: none;
+    display: block;
+    box-sizing: border-box;
+    padding-top: 12px;
+    padding-left: 16px;
+    font-size: 12px;
+    line-height: 14px;
+    color: $text-gray;
+    transition: $transition-border;
+    outline: $main-blue;
+    &:hover,
+    &:focus {
+      border: 1px solid $main-blue;
+    }
+  }
+  .submit-button-1 {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    background: $main-blue;
+    box-shadow: $button-box-shadow;
+    border-radius: 4px;
+    color: $main-white;
+    border-style: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $main-white;
+  }
+  .checkbox-label {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $main-gray;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .checkbox-input {
+    appearance: none;
+    width: 16px;
+    height: 15px;
+    background: $main-white;
+    box-shadow: $checkbox-shadow;
+    border-radius: 4px;
+    border: $checkbox-border;
+  }
+  .checkbox-icon {
+    position: absolute;
+    fill: $main-white;
+    border-radius: 2px;
+    visibility: hidden;
+    transition: $transition-background, visibility;
+  }
+  .checkbox-input:checked + .checkbox-icon {
+    visibility: visible;
+    background-color: $main-blue;
+  }
+  .checkbox-style {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .link {
+    text-decoration: underline;
+    color: $main-blue;
+  }

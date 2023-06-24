@@ -1,0 +1,27 @@
+.lorem {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    justify-content: space-between;
+&__icons {
+    display: flex;
+    gap: 30px;
+    padding: 25px 102.34px;
+&--backgroud {
+    background: $backgroud-white;
+    border-radius: 4px;
+}
+}
+}
+.advantages {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.17;
+    margin-bottom: 10px;
+    margin-top: 55px;
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $main-gray;
+  }
+}

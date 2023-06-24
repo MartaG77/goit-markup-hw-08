@@ -1,0 +1,29 @@
+.project-buttons {
+  display: flex;
+  margin-bottom: 34px;
+  justify-content: center;
+  gap: 8px;
+  &__btn {
+    background: $backgroud-white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.63;
+    width: 121px;
+    height: 38px;
+    left: 961px;
+    top: 174px;
+    border-radius: 4px;
+    border-style: none;
+    transition: $main-transition, $transition-background, $transition-box-shadow;
+    &:hover,
+    &:focus {
+      background-color: $main-blue;
+      color: $main-white;
+      cursor: pointer;
+      box-shadow: $portfolio-btn-box-shadow;
+      border-radius: 4px;
+    }
+    }
+}
+
+  

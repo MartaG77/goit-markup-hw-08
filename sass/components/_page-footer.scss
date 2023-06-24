@@ -1,0 +1,107 @@
+.footer-background {
+  background: $main-background;
+}
+.footer-columns {
+  display: flex;
+}
+.footer-logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $main-white;
+    padding-top: 60px;
+  }
+  .footer-social {
+    width: 206px;
+    height: 80px;
+    margin-top: 72px;
+    margin-left: 70px;
+  }
+    .footer-icon-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .footer-icons {
+    background-color: $icon-background;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: $transition-background;
+    &:hover,
+  &:focus {
+    background-color: $main-blue;
+  }
+  &__fill {
+    fill: $main-white;
+    margin: 12px;
+  }
+  }
+  .footer-newsletter {
+    margin-top: 72px;
+    margin-left: 70px;
+    display: flex;
+    &__label {
+      width: 358px;
+      height: 50px;
+      left: 815px;
+      top: 2787px;
+      border: $border-gray3;
+      filter: $drop-shadow;
+      border-radius: 4px;
+      background: $main-background;
+      padding-left: 16px;
+      margin-right: 12px;
+      outline: $outline-gray;
+      color: $main-white;
+    }
+  }
+   .submit-button-2 {
+    display: flex;
+    justify-content: space-evenly;
+  &__style {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    background: $main-blue;
+    box-shadow: $button-box-shadow;
+    border-radius: 4px;
+    color: $main-white;
+    border-style: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $main-white;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 38px;
+  }
+  &__icon {
+    fill: $main-white;
+  }
+}
+  .footer-contact {
+    margin: 0 auto;
+    padding: 0 0 60px 0;
+  &__address {
+    line-height: 1.71;
+    color: $main-white;
+    padding-top: 20px;
+  }
+  &__link {
+    line-height: 1.71;
+    color: $link-white;
+    transition: $main-transition;
+    &:hover,
+    &:focus {
+      color: $main-blue;
+    }
+  }
+}

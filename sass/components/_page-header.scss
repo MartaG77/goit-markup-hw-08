@@ -1,0 +1,87 @@
+.menu {
+  border-bottom: 1px solid $border-white2;
+  display: flex;
+  align-items: center;
+  height: 80px;
+&__items {
+  display: flex;
+  justify-content: space-between;  
+}
+&__logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $logo-black;
+  padding-right: 93px;
+&--color {
+  color: $main-blue;
+}
+}
+&__logo-and-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+}
+.navigation {
+  display: flex;
+  gap: 50px;
+&__link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17;
+  color: $main-black;
+  transition: $main-transition;
+&:hover,
+&:focus {
+  color: $main-blue;
+}
+}
+}
+.navigation__underline {
+  position: relative;
+  top: 28px;
+  border-radius: 2px;
+  background: $main-blue;
+&::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 53px;
+  height: 4px;
+  background-color: $main-blue;
+}
+}
+.contact {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 30px;
+  color: $main-gray;
+&__items {    
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17;
+  color: $main-gray;
+  display: flex;
+  gap: 10px;
+  transition: $main-transition;
+&:hover,
+&:focus {
+  color: $main-blue; 
+}  
+&:hover svg {
+  fill: $main-blue;
+}
+}
+&__icon {
+  fill: $main-gray;
+&:hover,
+&:focus {
+  color: $main-blue;
+}
+}   
+}

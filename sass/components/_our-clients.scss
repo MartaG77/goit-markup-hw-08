@@ -1,0 +1,33 @@
+
+.clients {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    justify-content: space-between;
+    &__heading {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.17;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    &__icons {
+      fill: $icon-gray;
+      transition: $transition-fill;
+    &:hover,
+    &:focus {
+      fill: $main-blue;
+      cursor: pointer;
+    }
+  }
+    &__background {
+    border: 1px solid $icon-gray;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    &:hover,
+    &:focus {
+      border: 1px solid $main-blue;
+  }
+}
+}
