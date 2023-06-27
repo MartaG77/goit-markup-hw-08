@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   height: 80px;
+  width: 100%;
 &__items {
   display: flex;
   justify-content: space-between;  
@@ -25,8 +26,14 @@
 }
 }
 .navigation {
-  display: flex;
-  gap: 50px;
+  @include tablet {
+    display: flex;
+    gap: 50px;
+  }
+  @include desktop {
+    display: flex;
+    gap: 50px;
+  }
 &__link {
   font-size: 14px;
   font-weight: 500;
@@ -38,6 +45,7 @@
   color: $main-blue;
 }
 }
+display: none;
 }
 .navigation__underline {
   position: relative;
@@ -55,12 +63,19 @@
 }
 }
 .contact {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  font-weight: 500;
-  gap: 30px;
-  color: $main-gray;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 10px;
+    color: $main-gray;
+  }
+  @include desktop {
+    flex-direction: row;
+    gap: 30px;
+  }
+
 &__items {    
   font-size: 14px;
   font-weight: 500;
@@ -83,5 +98,7 @@
 &:focus {
   color: $main-blue;
 }
-}   
 }
+display: none;   
+}
+

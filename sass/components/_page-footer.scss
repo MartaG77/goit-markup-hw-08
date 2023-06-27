@@ -3,6 +3,7 @@
 }
 .footer-columns {
   display: flex;
+  flex-direction: column;
 }
 .footer-logo {
     font-family: "Raleway";
@@ -16,7 +17,6 @@
     width: 206px;
     height: 80px;
     margin-top: 72px;
-    margin-left: 70px;
   }
     .footer-icon-group {
     display: flex;
@@ -42,7 +42,6 @@
   }
   .footer-newsletter {
     margin-top: 72px;
-    margin-left: 70px;
     display: flex;
     &__label {
       width: 358px;

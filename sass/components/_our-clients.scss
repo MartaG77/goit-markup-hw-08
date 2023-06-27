@@ -1,6 +1,7 @@
 
 .clients {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 0;
     justify-content: space-between;

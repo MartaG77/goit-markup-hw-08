@@ -12,6 +12,7 @@
         text-align: center;
         margin-top: 94px;
         margin-bottom: 50px;
+        display: none;
       }
     &__label {
       position: relative;
@@ -37,4 +38,5 @@
     &__img {
       height: 100%;
     }
+    display: none;
   }

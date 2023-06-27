@@ -15,7 +15,7 @@
       body {
         font-family: "Roboto", san-serif;
         color: #212121;
-      }
+      } 
     </style>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
@@ -28,6 +28,7 @@
             <a class="menu__logo" href="index.html"
               ><span class="menu__logo--color">Web</span>Studio</a
             >
+
             <nav>
               <ul class="navigation">
                 <li>
@@ -41,6 +42,11 @@
               </ul>
             </nav>
           </div>
+          <button type="button" 
+          class="mobile-menu js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"><svg width="40px" heigh="40px"><use href="./images/icons.svg#icon-mobile-menu"></use></svg>
+        </button>
           <div class="contact">
             <a class="contact__items" href="mailto:info@example.com"
               ><svg class="contact__icon" width="16px" height="12px">
@@ -62,11 +68,11 @@
       <section class="section solutions">
         <div class="container">
           <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="solutions__button" type="button" data-modal-open>
-            Zamów usługę
-          </button>
-        </div>
-      </section>
+        <button class="solutions__button" type="button" data-modal-open>
+          Zamów usługę
+        </button>
+    </div>
+  </section>
       <section class="section">
         <div class="container">
           <ul class="lorem">
@@ -175,10 +181,8 @@
             <li>
               <figure class="image-backgroud">
                 <img
-                  src="./images/img4.jpg"
+                  src="./images/img4_x1_mobile.jpg"
                   alt="team member1"
-                  width="270"
-                  height="260"
                 />
                 <figcaption class="image-backgroud__card">
                   John Doe<br /><span class="image-backgroud__position"
@@ -220,10 +224,8 @@
             <li>
               <figure class="image-backgroud">
                 <img
-                  src="./images/img5.jpg"
+                  src="./images/img5_x1_mobile.jpg"
                   alt="team member2"
-                  width="270"
-                  height="260"
                 />
                 <figcaption class="image-backgroud__card">
                   John Doe<br /><span class="image-backgroud__position">
@@ -265,10 +267,8 @@
             <li>
               <figure class="image-backgroud">
                 <img
-                  src="./images/img6.jpg"
+                  src="./images/img6_x1_mobile.jpg"
                   alt="team member3"
-                  width="270"
-                  height="260"
                 />
                 <figcaption class="image-backgroud__card">
                   John Doe<br /><span class="image-backgroud__position"> Marketing</span>
@@ -308,10 +308,8 @@
             <li>
               <figure class="image-backgroud">
                 <img
-                  src="./images/img7.jpg"
+                  src="./images/img7_x1_mobile.jpg"
                   alt="team member4"
-                  width="270"
-                  height="260"
                 />
                 <figcaption class="image-backgroud__card">
                   John Doe<br /><span class="image-backgroud__position">UI Designer</span>
@@ -519,10 +517,47 @@
         </div>
       </div>
     </footer>
+<div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-container__close-button js-close-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-mobile-close"></use>
+          </svg>
+        </button>
+<div class="container-navigation">
+        <ul>
+          <li>
+            <a class="container-navigation__link" href="">Agencja</a>
+          </li>
+          <li>
+            <a class="container-navigation__link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li><a class="container-navigation__link" href="">Kontakt</a></li>
+        </ul>
+</div>
+      <div>
+        <ul class="container-contacts">
+          <li><a class="container-contacts__phone" href="tel:+48111111111">
+        
+            +48 111 111 111</a>
+          </li>
+      <li><a class="container-contacts__email" href="mailto:info@example.com"
+        >
+        info@devstudio.com
+      </a>
+      </li></ul>
+      <ul class="container-socials">
+        <li><a class="container-socials__link" href="">Instagram</a></li>
+        <li><a class="container-socials__link" href="">Twitter</a></li></div>
+        <li><a class="container-socials__link" href="">Facebook</a></li>
+        <li><a class="container-socials__link" href="">LinkedIn</a></li>
+      </ul>
+    </div>
+    </div>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
-          <svg class="close-button__icon" width="30" height="30">
+          <svg class="close-button__icon" width="40" height="40">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -591,6 +626,13 @@
         </form>
       </div>
     </div>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
