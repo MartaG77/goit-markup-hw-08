@@ -1,10 +1,11 @@
 
 .clients {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 0;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-left: 0;
     &__heading {
       font-size: 36px;
       font-weight: 700;
@@ -13,6 +14,7 @@
       margin-bottom: 50px;
     }
     &__icons {
+      
       fill: $icon-gray;
       transition: $transition-fill;
     &:hover,
@@ -24,8 +26,6 @@
     &__background {
     border: 1px solid $icon-gray;
     border-radius: 4px;
-    width: 170px;
-    height: 92px;
     &:hover,
     &:focus {
       border: 1px solid $main-blue;

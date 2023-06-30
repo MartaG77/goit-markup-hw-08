@@ -4,6 +4,7 @@
 .footer-columns {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .footer-logo {
     font-family: "Raleway";
@@ -12,11 +13,11 @@
     line-height: 1.19;
     color: $main-white;
     padding-top: 60px;
+    text-align: center;
   }
   .footer-social {
-    width: 206px;
-    height: 80px;
-    margin-top: 72px;
+
+    margin-top: 30px;
   }
     .footer-icon-group {
     display: flex;
@@ -41,25 +42,29 @@
   }
   }
   .footer-newsletter {
-    margin-top: 72px;
+    margin-top: 60px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
     &__label {
-      width: 358px;
-      height: 50px;
-      left: 815px;
-      top: 2787px;
+    display: block;
+    justify-content: center;
+    height: 50px;
+    width: 358px;
       border: $border-gray3;
       filter: $drop-shadow;
       border-radius: 4px;
       background: $main-background;
       padding-left: 16px;
-      margin-right: 12px;
       outline: $outline-gray;
       color: $main-white;
     }
   }
    .submit-button-2 {
     display: flex;
+    
     justify-content: space-evenly;
   &__style {
     position: relative;
@@ -88,7 +93,8 @@
 }
   .footer-contact {
     margin: 0 auto;
-    padding: 0 0 60px 0;
+    padding: 0 0 30px 0;
+    text-align: center;
   &__address {
     line-height: 1.71;
     color: $main-white;

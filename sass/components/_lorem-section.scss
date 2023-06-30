@@ -3,17 +3,22 @@
     flex-direction: column;
     gap: 30px;
     padding: 0;
-    
 &__icons {
     display: flex;
-    padding: 25px 102.34px;
 &--backgroud {
   display: block;
     background: $backgroud-white;
     border-radius: 4px;
+    margin: auto;
+}
+}
+&__icons-wrapper {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: $backgroud-white;
 
 }
-}
+
 @include tablet {
   flex-direction: wrap;
 }
