@@ -8,6 +8,11 @@
     @include tablet {
       flex-direction: row;
       flex-wrap: wrap;
+
+    }
+    @include desktop {
+      flex-direction: row;
+      flex-wrap: nowrap;
     }
   }
 .heading-team {
@@ -44,6 +49,7 @@
       line-height: 1.88;
       color: $main-gray;
     }
+    
   }
   .social-icons {
     display: flex;

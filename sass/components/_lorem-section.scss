@@ -3,8 +3,10 @@
     flex-direction: column;
     gap: 30px;
     padding: 0;
+
 &__icons {
     display: flex;
+
 &--backgroud {
   display: block;
     background: $backgroud-white;
@@ -15,16 +17,22 @@
 &__icons-wrapper {
   padding-top: 25px;
   padding-bottom: 25px;
-  background: $backgroud-white;
-
-}
-
-@include tablet {
-  flex-direction: wrap;
-}
+  background: $backgroud-white;}
+  @include tablet {
+    max-width: 354px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  padding: 0;
+  gap: 30px;
+  justify-content: space-between;
+  }
 @include desktop {
-  flex-direction: row;
+    max-width: 270px;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
+
 }
 .advantages {
     font-size: 16px;
@@ -32,6 +40,7 @@
     line-height: 1.17;
     margin-bottom: 10px;
     margin-top: 55px;
+    
   &__text {
     font-size: 14px;
     line-height: 1.71;
