@@ -15,6 +15,9 @@
   line-height: 1.19;
   color: $logo-black;
   padding-right: 93px;
+  @include tablet {
+    padding-right: 83px;
+  }
 &--color {
   color: $main-blue;
 }

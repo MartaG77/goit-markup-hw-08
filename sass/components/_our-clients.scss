@@ -6,13 +6,13 @@
   gap: 30px;
   justify-content: center;
   padding-left: 0;
- 
 
   @include desktop {
     display: flex;
     gap: 30px;
     padding: 0;
     justify-content: space-between;
+  
   }
     &__heading {
       font-size: 36px;
@@ -34,6 +34,13 @@
     &__background {
     border: 1px solid $icon-gray;
     border-radius: 4px;
+    @include tablet {
+      width: 226px;
+    }
+    @include desktop {
+      width: 170px;
+    }
+
     
     &:hover,
     &:focus {

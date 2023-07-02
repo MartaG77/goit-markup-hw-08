@@ -15,7 +15,11 @@
     flex-direction: unset;
     flex-wrap: nowrap;
 }
-  }
+&__columns {
+  flex-basis: calc((100% - 30px) / 2); }
+}
+
+  
  
 .heading-team {
     font-size: 36px;
@@ -34,8 +38,6 @@
 
   .image-backgroud {
     background: $main-white;
-    left: 215px;
-    top: 1635px;
     box-shadow: $modal-box-shadow;
     border-radius: 0px 0px 4px 4px;
     &__card {
