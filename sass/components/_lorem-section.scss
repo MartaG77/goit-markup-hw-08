@@ -6,20 +6,29 @@
 
 &__icons {
     display: flex;
-
+    margin: auto;
+   }
+&__items {
+    width:100%;
+ @include tablet {
+  flex-basis: calc((100% - 30px) / 2); }
+  @include desktop {
+    flex-basis: calc((100% - 90px) / 4);}
+  }
 &--backgroud {
   display: block;
     background: $backgroud-white;
     border-radius: 4px;
     margin: auto;
 }
-}
+
 &__icons-wrapper {
   padding-top: 25px;
   padding-bottom: 25px;
-  background: $backgroud-white;}
+  background: $backgroud-white;
+}
   @include tablet {
-    max-width: 354px;
+ 
     flex-direction: row;
     flex-wrap: wrap;
     flex-basis: calc((100% - 3 * 30px) / 4);
@@ -28,7 +37,7 @@
   justify-content: space-between;
   }
 @include desktop {
-    max-width: 270px;
+ 
     flex-direction: row;
     flex-wrap: nowrap;
 }

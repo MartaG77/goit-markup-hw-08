@@ -3,9 +3,17 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   justify-content: center;
   padding-left: 0;
+ 
+
+  @include desktop {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    justify-content: space-between;
+  }
     &__heading {
       font-size: 36px;
       font-weight: 700;
@@ -26,6 +34,7 @@
     &__background {
     border: 1px solid $icon-gray;
     border-radius: 4px;
+    
     &:hover,
     &:focus {
       border: 1px solid $main-blue;

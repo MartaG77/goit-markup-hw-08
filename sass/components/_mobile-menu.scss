@@ -84,6 +84,7 @@ letter-spacing: 0.48px;
 }
 .container-socials {
   display: flex;
+  gap: 4px;
  padding-top: 64px;
  padding-bottom: 48px;
   &__link {
@@ -93,4 +94,9 @@ letter-spacing: 0.48px;
     line-height: 22px;
     letter-spacing: 0.36px;
   }
+}
+.line {
+font-size: 22px;
+font-weight: 100;
+color: #21212133;
 }
