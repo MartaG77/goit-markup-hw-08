@@ -5,14 +5,12 @@
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  padding-left: 0;
-
-  @include desktop {
+  padding: 0;
+    @include desktop {
     display: flex;
     gap: 30px;
     padding: 0;
     justify-content: space-between;
-  
   }
     &__heading {
       font-size: 36px;
@@ -21,8 +19,7 @@
       text-align: center;
       margin-bottom: 50px;
     }
-    &__icons {
-      
+    &__icons {  
       fill: $icon-gray;
       transition: $transition-fill;
     &:hover,
@@ -35,14 +32,13 @@
     border: 1px solid $icon-gray;
     border-radius: 4px;
     @include tablet {
-      width: 226px;
       justify-content: space-around;
+    width: 220px;
     }
     @include desktop {
       width: 170px;
     }
-
-    
+  
     &:hover,
     &:focus {
       border: 1px solid $main-blue;

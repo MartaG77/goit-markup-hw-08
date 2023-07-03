@@ -36,12 +36,21 @@
 }
   .modal {
     position: absolute;
-    width: 528px;
-    top: 221px;
+    width: 450px;
+    height: 609px;
+    top: 93px;
     background: $main-white;
     box-shadow: $modal-box-shadow;
     border-radius: 4px;
     display: block;
+    @include tablet {
+      top: 208px;
+    }
+    @include desktop {
+      width: 528px;
+      height: 581px;
+      top: 221px;
+    }
   }
   .label-background {
     position: absolute;
@@ -73,7 +82,10 @@
   }
   .form-box {
     position: relative;
-    width: 448px;
+    width: 370px;
+    @include desktop {
+      width: 448px;
+    }
   &__label-style { 
     font-size: 12px;
     line-height: 14px;
@@ -86,7 +98,7 @@
     position: relative;
     transition: $transition-fill;
   &--label {
-      width: 448px;
+      width: 370px;
       height: 40px;
       border: $border-gray2;
       border-radius: 4px;
@@ -98,6 +110,9 @@
       &:hover,
       &:focus {
         border: 1px solid $main-blue;
+      }
+      @include desktop {
+        width: 448px;
       }
   }
   &--icon {
@@ -115,7 +130,7 @@
   }
 }
   .textarea-style {
-    width: 448px;
+    width: 370px;
     height: 120px;
     background-color: inherit;
     border: $border-gray2;
@@ -130,6 +145,9 @@
     color: $text-gray;
     transition: $transition-border;
     outline: $main-blue;
+    @include desktop {
+      width: 448px;
+    }
     &:hover,
     &:focus {
       border: 1px solid $main-blue;
@@ -157,7 +175,7 @@
     margin-top: 20px;
     margin-bottom: 30px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: $main-gray;
@@ -167,6 +185,9 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    @include desktop {
+      font-size: 14px;
+    }
   }
   .checkbox-input {
     appearance: none;
